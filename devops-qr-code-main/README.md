@@ -87,8 +87,8 @@ Automated build and deployment pipeline using GitHub Actions (`.github/workflows
   - Checks out the repository
   - Builds Docker images for both API and front-end
   - Pushes images to Docker Hub:
-    - `ankitrj3/devops-qr-code-api:latest`
-    - `ankitrj3/devops-qr-code-frontend:latest`
+    - `likhithasri7/devops-qr-code-api:latest`
+    - `likhithasri7/devops-qr-code-frontend:latest`
 
 **Pre-requisites for CI/CD:**
 - Docker Hub account
@@ -98,12 +98,12 @@ Automated build and deployment pipeline using GitHub Actions (`.github/workflows
 
 ```bash
 # Pull and run API
-docker pull ankitrj3/devops-qr-code-api:latest
-docker run -p 8000:8000 --env-file .env ankitrj3/devops-qr-code-api:latest
+docker pull likhithasri7/devops-qr-code-api:latest
+docker run -p 8000:8000 --env-file .env likhithasri7/devops-qr-code-api:latest
 
 # Pull and run Front-end
-docker pull ankitrj3/devops-qr-code-frontend:latest
-docker run -p 3000:3000 ankitrj3/devops-qr-code-frontend:latest
+docker pull likhithasri7/devops-qr-code-frontend:latest
+docker run -p 3000:3000 likhithasri7/devops-qr-code-frontend:latest
 ```
 
 ## Original Author
@@ -112,7 +112,7 @@ docker run -p 3000:3000 ankitrj3/devops-qr-code-frontend:latest
 
 ## Forked & Extended By
 
-[Likhitha sri](https://github.com/Ankitrj3)
+[Likhitha sri](https://github.com/likhithasri7)
 
 ## License
 
